@@ -21,6 +21,6 @@ function finalScore(omr) {
   return Math.round(rightAnswer - minusMark);
 }
 
-const result = finalScore({ right: 67, wrong: 23, skip: 10 });
+// const result = finalScore({ right: 67, wrong: 23, skip: 10 });
 // const result = finalScore("[{ right: 30, wrong: 30, skip: 40 }]");
-console.log(result);
+// console.log(result);
