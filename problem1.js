@@ -8,11 +8,10 @@ function newPrice(currentPrice, discount) {
     return "Invalid";
   }
 
-  const discountedPrice = (currentPrice * discount) / 100;
-  const payablePrice = currentPrice - discountedPrice;
+  const discountedPrice = currentPrice - (currentPrice * discount) / 100;
 
-  return payablePrice.toFixed(3);
+  return discountedPrice.toFixed(3);
 }
 
-const result = newPrice(2000, 17.17);
-console.log(result);
+// const result = newPrice(2500, 17.17);
+// console.log(result);
